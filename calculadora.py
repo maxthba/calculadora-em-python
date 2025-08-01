@@ -18,11 +18,46 @@ def div (num1, num2):
 
 rodando = True
 while rodando:
-    print("digite 1 para soma")
-    print("digite 2 para subitracao")
-    print("digite 3 para multiplicacao")
-    print("digite 4 para divisao")
+    opcoes = ["soma", "subitracao", "multiplicacao", "divisao"]
+    print(".soma")
+    print(".subitracao")
+    print(".multiplicacao")
+    print(".divisao")
 
-    escolha = input("digite a opcao desejada:")
-limpar_terminal()
+    escolha = input("digite a opcao desejada:").lower()
+    limpar_terminal()
+    while escolha not in opcoes:
+        print("opcao invalida,tente novamente")
+        input("Pressione Enter para continuar...")
+        print(".soma")
+        print(".subitracao")
+        print(".multiplicacao")
+        print(".divisao")
+        escolha =input("escolha uma das opcoes acima:").lower()
+        limpar_terminal()
+    
+    if escolha == "soma":
+        num1 = float(input("Digite o primeiro numero: "))
+        num2 = float(input("Digite o segundo numero: "))
+        print(f"O resultado da soma é: {som(num1, num2)}")
+    
+    elif escolha == "subitracao":
+        num1 = float(input("Digite o primeiro numero: "))
+        num2 = float(input("Digite o segundo numero: "))
+        print(f"O resultado da subtracao é: {sub(num1, num2)}")
 
+    elif escolha == "multiplicacao":
+        num1 = float(input("Digite o primeiro numero: "))
+        num2 = float(input("Digite o segundo numero: "))
+        print(f"O resultado da multiplicacao é: {mult(num1, num2)}")
+
+    elif escolha == "divisao":
+        num1 = float(input("Digite o primeiro numero: "))
+        num2 = float(input("Digite o segundo numero: "))
+        print(f"O resultado da divisao é: {div(num1, num2)}")
+
+    continuar = input("Deseja realizar outra operação? (s/n): ").lower()
+    if continuar != 's':
+        rodando =False
+    limpar_terminal()
+    
