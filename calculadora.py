@@ -41,7 +41,7 @@ while rodando:
         num2 = float(input("Digite o segundo numero: "))
         print(f"O resultado da soma é: {som(num1, num2)}")
     
-    elif escolha == "subitracao":
+    elif escolha == "subtracao":
         num1 = float(input("Digite o primeiro numero: "))
         num2 = float(input("Digite o segundo numero: "))
         print(f"O resultado da subtracao é: {sub(num1, num2)}")
