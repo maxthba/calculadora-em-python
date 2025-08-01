@@ -18,9 +18,9 @@ def div (num1, num2):
 
 rodando = True
 while rodando:
-    opcoes = ["soma", "subitracao", "multiplicacao", "divisao"]
+    opcoes = ["soma", "subtracao", "multiplicacao", "divisao"]
     print(".soma")
-    print(".subitracao")
+    print(".subtracao")
     print(".multiplicacao")
     print(".divisao")
 
@@ -30,7 +30,7 @@ while rodando:
         print("opcao invalida,tente novamente")
         input("Pressione Enter para continuar...")
         print(".soma")
-        print(".subitracao")
+        print(".subtracao")
         print(".multiplicacao")
         print(".divisao")
         escolha =input("escolha uma das opcoes acima:").lower()
